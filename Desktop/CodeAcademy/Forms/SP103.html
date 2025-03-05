@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Table</title>
+</head>
+
+<body>
+    <form action="" id="registerForm">
+        <table border="1" cellpadding="5" cellspacing="0" align="center" style="background-color:wheat;">
+            <tr>
+                <td><label for="name">Name:</label></td>
+                <td><input type="text" name="ad" placeholder="Adinizi daxil edin" required></td>
+            </tr>
+            <tr>
+                <td><label for="surname">Surname:</label></td>
+                <td><input type="text" name="Soyad" placeholder="Soyadinizi daxil edin" required></td>
+            </tr>
+            <tr>
+                <td><label for="email">Email:</label></td>
+                <td><input type="email" name="email" placeholder="Emailinizi daxil edin" required></td>
+            </tr>
+            <tr>
+                <td><label for="password">Password:</label></td>
+                <td><input type="password" name="parol" placeholder="Parolunuzu daxil edin" required></td>
+            </tr>
+            <tr>
+                <td><label for="number">Number:</label></td>
+                <td><input type="number" name="nomre" placeholder="Nomrenizi daxil edin" required></td>
+            </tr>
+            <tr>
+                <td>Sex:</td>
+                <td>
+                    <input type="radio" id="male" name="cins" value="male">
+                    <label for="male">Male</label>
+                    <input type="radio" id="female" name="cins" value="female">
+                    <label for="female">Female</label>
+                </td>
+            </tr>
+            <tr>
+                <td>Please choose the word that best describes your expreience🌟:</td><br>
+                <td>
+                    <input type="checkbox" id="word" name="word" value="great">
+                    <label for="great">Great😊</label>
+                    <input type="checkbox" id="word" name="cins" value="average">
+                    <label for="average">Average 😐</label>
+                    <input type="checkbox" id="word" name="word" value="disapointing">
+                    <label for="disapointing">Disapointing🙁</label>
+                    <input type="checkbox" id="word" name="cins" value="poor">
+                    <label for="poor">Poor 😞</label>
+                </td>
+            </tr>
+            <tr>
+                <td>How satisfied were you with our service✨:</td><br>
+                <td>
+                    <input type="radio" id="word" name="word" value="Very satisfied">
+                    <label for="Very satisfied">Very satisfied👍🏿</label>
+                    <input type="radio" id="word" name="cins" value="Satisfied">
+                    <label for="Satisfied">Satisfied🙏🏿</label>
+                    <input type="radio" id="word" name="word" value="Dissatisfied">
+                    <label for="Dissatisfied">Dissatisfied 😠</label>
+                    <input type="radio" id="word" name="cins" value="Very Dissatisfied">
+                    <label for="Very Dissatisfied">Very Dissatisfied😡</label>
+                </td>
+            </tr>
+            <tr>
+                <td><label for="country">Country:</label></td>
+                <td>
+                    <select name="country">
+                        <option value="az">Azerbaijan🇦🇿</option>
+                        <option value="tr">Turkey🇹🇷</option>
+                        <option value="hu">Hungary🇭🇺</option>
+                        <option value="mn">Mongolia🇲🇳</option>
+                    </select>
+                </td>
+            </tr>
+            <tr>
+                <td><label for="message">If you have any additional comments, feel free to write them down:</label></td>
+                <td><textarea name="message" id="message" cols="30" rows="5"></textarea></td>
+            </tr>
+            <tr>
+                <td>Bio Photo</td>
+                <td>
+                    <input type="file" id="bioPhoto" name="bioPhoto" accept="image/*">
+                    <!-- Şəkil önizləmə kvadratı -->
+                    <img id="preview" src="" alt="Preview"
+                        style="display:none; width: 100px; height: 100px; border: 1px solid black; margin-top: 10px;">
+                </td>
+            </tr>
+            <tr>
+                <td colspan="2" align="center">
+                    <input type="submit" id="submit" name="submit" value="Submit">
+                </td>
+            </tr>
+        </table>
+
+    </form>
+
+    <script>
+        document.getElementById("registerForm").addEventListener("submit", function (event) {
+            event.preventDefault(); // Formun yenilənməsinin qarşısını alır
+
+            alert("Successfully submited😊");
+        });
+
+        // Bio Photo üçün önizləmə funksiyası
+        document.getElementById("bioPhoto").addEventListener("change", function (event) {
+            let file = event.target.files[0]; // Seçilən faylı götür
+            if (file) {
+                let reader = new FileReader();
+                reader.onload = function (e) {
+                    let img = document.getElementById("preview");
+                    img.src = e.target.result; // Şəkil mənbəyini dəyiş
+                    img.style.display = "block"; // Şəkili göstər
+                };
+                reader.readAsDataURL(file); // Faylı oxuyub önizləmə üçün hazırlayır
+            }
+        });
+
+    </script>
+
+</body>
+
+</html>

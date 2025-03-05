@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Profile Card</title>
+    <link rel="stylesheet" href="./assets/css/card-style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+    <style>
+        .profile-card {
+            width: 300px;
+            height: 400px;
+            position: relative;
+            transform-style: preserve-3d;
+            transition: transform 0.6s ease-in-out, scale 0.3s ease-in-out;
+        }
+
+        #PFP.profile-header img {
+            width: 100px;
+            height: 100px;
+            border-radius: 50%;
+            object-fit: cover;
+            border: 4px solid white;
+            box-shadow: 0 0 5px rgba(0, 0, 0, 0.2);
+        }
+
+        profile-header img {
+            width: 100px;
+            height: 100px;
+            border-radius: 50%;
+            object-fit: cover;
+            border: 4px solid beige;
+            box-shadow: 0 0 5px blue;
+        }
+    </style>
+</head>
+
+<body>
+
+    <div class="card-container">
+        <div class="profile-card">
+            <div class="card-front">
+                <h3 style="background-color: black; color:white; width: 100%; border: none; border-radius: 5px">User
+                    Profile Card</h3>
+                <div class="profile-header" id="PFP">
+                    <img src="assets/images/profile.jpg" alt="Profile Picture">
+                </div>
+                <div class="profile-info">
+                    <h3>Ali Qurbanov</h3>
+                    <p>Freelancer</p>
+                    <p class="company">Random Company</p>
+                </div>
+                <div class="social-icons">
+                    <a href="https://www.instagram.com/ali_._qurbanov/"><i class="fab fa-instagram"></i></a>
+                    <a href="#"><i class="fab fa-facebook"></i></a>
+                    <a href="#"><i class="fab fa-twitter"></i></a>
+                    <a href="https://www.linkedin.com/in/%C9%99li-qurbanov-152612267/"><i
+                            class="fab fa-linkedin"></i></a>
+                </div>
+                <button class="contact-btn" onclick="flipCard()">Contact</button>
+            </div>
+            <div class="card-back">
+                <h3>Contact Information</h3>
+                <p>Phone: +994993658111</p>
+                <button class="back-btn" onclick="flipCard()">Back</button>
+            </div>
+        </div>
+    </div>
+
+    <script>
+        function flipCard() {
+            document.querySelector(".profile-card").classList.toggle("flipped");
+        }
+    </script>
+
+</body>
+
+</html>
