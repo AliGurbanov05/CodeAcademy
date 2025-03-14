@@ -1,0 +1,150 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background-color: rgb(201, 201, 201);
+}
+
+.services {
+    display: flex;
+    flex-direction: column;
+
+    padding-top: 20px;
+    width: 88%;
+    height: 600px;
+    margin: 0 auto;
+    padding-bottom: 20vh;
+
+    .service-text h3 {
+        padding-top: 5vh;
+        font-size: 5vh;
+        width: 100%;
+        color: brown;
+    }
+
+    .service-text {
+        h1{
+
+            font-size: 6vh;
+            padding-top: 4vh;
+        }
+        
+    }
+
+    .service-cards {
+        gap: 5vh;
+        width: 100%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        
+
+        // margin: 0 auto;
+
+
+        .service-card {
+            // padding-top: 30px;
+            height: 340px;
+            margin: 0 auto;
+            background-color: white;
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+            width: 30%;
+
+            .card-icon {
+                padding-top: 30px;
+                padding-bottom: 30px;
+                color: brown;
+                font-size: 8vh;
+                display: flex;
+                justify-content: center;
+            }
+
+            .card-text {
+                display: flex;
+                flex-direction: column;
+                text-align: center;
+
+                h2 {
+                    padding-bottom: 3vh;
+                }
+
+                span {
+                    color: gray;
+                    font-weight: 600;
+                    // padding-bottom: 8vh;
+                }
+            }
+        }
+    }
+
+}
+
+// telefon ucun
+@media screen and (min-width:300px) and (max-width:700px) {
+    .services {
+        .service-text {
+            flex-direction: column;
+            align-items: center;
+            width: 100%;
+            max-width: 400px;
+            margin: 10px auto;
+        }
+
+        .service-cards {
+            width: 100%;
+            flex-direction: column;
+            align-items: center;
+
+            .service-card {
+                width: 50%;
+                height: 500px   ;
+
+            }
+        }
+    }
+
+
+
+
+}
+
+
+@media screen and (min-width:768px) and (max-width:1024px) {
+    .service-text {
+        flex-direction: column;
+        align-items: center;
+        width: 100%;
+    }
+
+    .service-cards {
+        width: 100%;
+        display: flex;
+        flex-wrap: wrap;
+        // justify-content: flex-start;
+        // align-items: flex-start;
+
+        .service-card {
+            width: 100%;
+        }
+    }
+
+
+    .services {
+        width: 100%;
+
+        .service-cards {
+            display: flex;
+            flex-wrap: wrap ;
+
+            .service-card {
+                width: 40%;
+                display: flex;
+                flex-direction: column;
+                flex-wrap: wrap;
+            }
+        }
+    }
+}
