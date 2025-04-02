@@ -2,46 +2,168 @@
   margin: 0;
   padding: 0;
   box-sizing: border-box;
+  font-family: "Roboto", sans-serif;
+}
+
+header {
+  background-color: white;
+}
+header .header-top {
+  width: 100%;
+  color: white;
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  background-color: rgb(13, 45, 62);
+}
+header .header-top .top-text {
+  gap: 35px;
+  width: 55%;
+  height: 50px;
+  display: flex;
+  font-size: 13px;
+  font-weight: 200;
+  align-items: center;
+}
+header .header-top .top-text i {
+  color: rgb(233, 77, 101);
+}
+header .header-top .top-icons {
+  gap: 20%;
+  width: 150px;
+  display: flex;
+  font-size: 18px;
+}
+header .header-bottom {
+  max-width: 100%;
+  height: 100px;
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+}
+header .header-bottom .navigation ul {
+  gap: 31px;
+  display: flex;
+  list-style: none;
+  justify-content: flex-end;
+}
+header .header-bottom .navigation ul a {
+  color: gray;
+  font-weight: 500;
+  text-decoration: none;
+}
+header .header-bottom .hamburger-menu {
+  display: none;
+  font-size: 30px;
+  cursor: pointer;
+  background: none;
+  border: none;
+  position: absolute;
+  top: 20px;
+  right: 20px;
 }
 
 body {
-  background-color: rgb(201, 201, 201);
+  background-color: rgb(241, 241, 241);
 }
-
-.services {
+body .success {
+  max-width: 100%;
+  height: 100vh;
+  display: flex;
+  overflow: hidden;
+  align-items: center;
+  background-size: cover;
+  background-position: center;
+  justify-content: space-around;
+  background-image: url("/assets/images/h1_hero.jpg");
+}
+body .success .btn {
+  padding: 10px 15px;
+  border: 1px solid rgb(13, 45, 62);
+  background-color: transparent;
+}
+body .success .success-in {
+  max-width: 85%;
+  height: 80vh;
   display: flex;
   flex-direction: column;
-  padding-top: 20px;
-  width: 88%;
+  opacity: 0;
+  transform: translateX(-100%);
+  animation: slideIn 1s ease-out forwards;
+}
+body .success .success-in .success-text {
+  max-width: 55%;
+}
+body .success .success-in .success-text h3 {
+  font-weight: 400;
+  font-size: 26px;
+  color: rgb(255, 33, 67);
+  animation-delay: 0.5s;
+}
+body .success .success-in .success-text h1 {
+  padding-top: 30px;
+  padding-bottom: 30px;
+  font-size: 96px;
+  font-weight: 700;
+  animation-delay: 0.7s;
+}
+body .success .success-in .success-text span {
+  font-size: 15px;
+  font-weight: 400;
+  animation-delay: 0.9s;
+}
+body .success .success-in .success-button {
+  padding-top: 30px;
+  animation-delay: 1.1s;
+}
+body .success .success-in .success-button button {
+  width: 195px;
+  height: 60px;
+  border: none;
+  color: white;
+  font-size: 25px;
+  font-weight: 300;
+  background-color: rgb(255, 33, 67);
+  animation-delay: 1.1s;
+}
+body .services {
+  display: flex;
+  flex-direction: column;
+  max-width: 88%;
+  overflow: hidden;
   height: 600px;
   margin: 0 auto;
-  padding-bottom: 20vh;
 }
-.services .service-text h3 {
+body .services .service-text h3 {
   padding-top: 5vh;
   font-size: 5vh;
   width: 100%;
   color: brown;
 }
-.services .service-text h1 {
+body .services .service-text h1 {
   font-size: 6vh;
   padding-top: 4vh;
+  padding-bottom: 30px;
 }
-.services .service-cards {
+body .services .service-cards {
   gap: 5vh;
-  width: 100%;
+  max-width: 100%;
+  overflow: hidden;
+  word-wrap: break-word;
   display: flex;
+  padding-top: 30px;
   justify-content: center;
   align-items: center;
 }
-.services .service-cards .service-card {
-  height: 340px;
+body .services .service-cards .service-card {
+  height: 300px;
   margin: 0 auto;
+  word-wrap: break-word;
   background-color: white;
   box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
-  width: 30%;
+  max-width: 30%;
 }
-.services .service-cards .service-card .card-icon {
+body .services .service-cards .service-card .card-icon {
   padding-top: 30px;
   padding-bottom: 30px;
   color: brown;
@@ -49,62 +171,67 @@ body {
   display: flex;
   justify-content: center;
 }
-.services .service-cards .service-card .card-text {
+body .services .service-cards .service-card .card-text {
   display: flex;
   flex-direction: column;
   text-align: center;
 }
-.services .service-cards .service-card .card-text h2 {
+body .services .service-cards .service-card .card-text h2 {
   padding-bottom: 3vh;
 }
-.services .service-cards .service-card .card-text span {
+body .services .service-cards .service-card .card-text span {
   color: gray;
   font-weight: 600;
 }
 
-@media screen and (min-width: 300px) and (max-width: 700px) {
-  .services .service-text {
-    flex-direction: column;
-    align-items: center;
-    width: 100%;
-    max-width: 400px;
-    margin: 10px auto;
+@keyframes slideIn {
+  from {
+    opacity: 0;
+    transform: translateX(-100%);
   }
-  .services .service-cards {
-    width: 100%;
-    flex-direction: column;
-    align-items: center;
-  }
-  .services .service-cards .service-card {
-    width: 50%;
-    height: 500px;
+  to {
+    opacity: 1;
+    transform: translateX(0);
   }
 }
-@media screen and (min-width: 768px) and (max-width: 1024px) {
-  .service-text {
-    flex-direction: column;
-    align-items: center;
-    width: 100%;
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+    transform: translateY(-30px);
   }
-  .service-cards {
-    width: 100%;
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+@media screen and (min-width: 300px) and (max-width: 700px) {
+  .success-text h1 {
+    font-size: 50px;
+  }
+  .service-card {
+    max-width: 50%;
+  }
+  .navigation {
+    display: none;
+  }
+  .hamburger-menu {
     display: flex;
-    flex-wrap: wrap;
   }
-  .service-cards .service-card {
-    width: 100%;
+}
+@media screen and (min-width: 700px) and (max-width: 1024px) {
+  header .navigation {
+    display: block;
   }
-  .services {
-    width: 100%;
+  header .hamburger-menu {
+    display: none;
   }
-  .services .service-cards {
-    display: flex;
-    flex-wrap: wrap;
+  .success {
+    height: fit-content;
   }
-  .services .service-cards .service-card {
-    width: 40%;
-    display: flex;
-    flex-direction: column;
-    flex-wrap: wrap;
+  .success .success-in .success-text h1 {
+    font-size: 50px;
+  }
+  .service-card {
+    max-width: 100%;
   }
 }
