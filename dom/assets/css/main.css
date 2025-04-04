@@ -1,0 +1,65 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+body {
+  background: #352f5b;
+}
+body section {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 100vh;
+}
+body section .todo-container {
+  gap: 10px;
+  width: 30%;
+  height: fit-content;
+  margin: 0 auto;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  background: white;
+  font-family: "Josefin Sans", sans-serif;
+  font-size: 23px;
+}
+body section .todo-container h1 {
+  padding: 20px;
+  color: #352f5b;
+}
+body section .todo-container input {
+  width: 200px;
+  height: 35px;
+  margin-bottom: 15px;
+  color: black;
+  border: none;
+  background: rgba(0, 0, 0, 0.2);
+  max-width: 400px;
+}
+body section .todo-container input:focus {
+  color: black;
+  background: rgba(0, 0, 0, 0.2);
+  border: none;
+  border-radius: 1px solid #423a6f;
+}
+body section .todo-container #add-btn {
+  width: 70px;
+  height: 40px;
+  border-radius: 5px;
+  margin-bottom: 20px;
+  border: none;
+  background: #423a6f;
+  border-radius: 10px;
+  color: white;
+}
+body section .todo-container #add-btn:hover {
+  border: none;
+  background: white;
+  color: #352f5b;
+  border-top-width: 1px;
+  border-bottom-width: 1px;
+  border-radius: 13px 13px;
+  transition: 0.8s;
+}
