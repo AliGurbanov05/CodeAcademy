@@ -1,0 +1,439 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Rubik", sans-serif;
+}
+
+header {
+    top: 0;
+    left: 0;
+    width: 100%;
+    z-index: 100;
+    height: 12vh;
+    display: flex;
+    color: white;
+    padding: 0 6vh;
+    position: fixed;
+    align-items: center;
+    background: rgba(0, 0, 0, 0.5);
+    /* Transparent background initially */
+    background-color: transparent;
+    justify-content: space-between;
+    transition: background-color 0.3s ease;
+    /* Smooth transition for background change */
+}
+
+.navigation {
+    margin-right: 2vh;
+}
+
+.navigation ul {
+    display: flex;
+    gap: 30px;
+}
+
+.navigation ul li {
+    list-style: none;
+}
+
+.navigation ul li a {
+    color: white;
+    text-decoration: none;
+}
+
+.navigation ul li a:hover {
+    color: #dc3545;
+    transition: 0.5s;
+}
+
+.contact {
+    display: flex;
+    align-items: center;
+    gap: 3vh;
+}
+
+.call {
+    font-weight: 500;
+}
+
+.phone {
+    font-weight: 400;
+    border-bottom: 3px dotted white;
+    padding-bottom: 2px;
+}
+
+.btn-header {
+    gap: 8px;
+    width: 22vh;
+    height: 7vh;
+    border: none;
+    display: flex;
+    color: white;
+    cursor: pointer;
+    font-weight: 500;
+    align-items: center;
+    justify-content: center;
+    background-color: #dc3545;
+}
+
+.btn-header:hover {
+    transition: 0.4s;
+    color: #dc3545;
+    background-color: white;
+}
+
+.hero {
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    background-size: cover;
+    justify-content: center;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-image: url("https://preview.colorlib.com/theme/charitee/assets/img/hero/h1_hero1.jpg");
+}
+
+@keyframes fadeInUp {
+    from {
+        opacity: 0;
+        transform: translateY(50px);
+    }
+
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+.help-out {
+    width: 88%;
+    display: flex;
+}
+
+.help-in {
+    width: 27%;
+    height: 45vh;
+    color: white;
+    opacity: 0;
+    animation: fadeInUp 1s ease-out forwards;
+    animation-delay: 0.5s;
+}
+
+.text h1 {
+    font-size: 45px;
+    padding-bottom: 20px;
+}
+
+.text span {
+    font-weight: 200;
+    font-size: 20px;
+    padding-bottom: 20px;
+}
+
+.btn-hero {
+    padding-top: 30px;
+}
+
+.btn-hero button {
+    gap: 8px;
+    width: 22vh;
+    height: 7vh;
+    border: none;
+    display: flex;
+    color: white;
+    cursor: pointer;
+    font-size: 15px;
+    font-weight: 500;
+    align-items: center;
+    justify-content: center;
+    background-color: aqua;
+}
+
+.btn-hero button:hover {
+    transition: 0.5s;
+    color: aqua;
+    background-color: white;
+}
+
+.donation-holder {
+    width: 100%;
+    height: 80vh;
+    background-color: rgb(252, 242, 235)
+}
+
+.donation {
+    gap: 20vh;
+    width: 100%;
+    height: 75vh;
+    display: flex;
+    margin: 0 auto;
+    padding-top: 10vh;
+    padding-bottom: 10vh;
+    justify-content: center;
+}
+
+.donation-text {
+    width: 30%;
+    display: flex;
+    flex-direction: column;
+}
+
+.upcoming {
+    font-weight: 300;
+    color: aqua;
+}
+
+.donate-text h1 {
+    padding-top: 6vh;
+    color: rgb(38, 59, 92);
+    font-size: 41px;
+    font-weight: 600;
+    font-family: "Jost", sans-serif;
+    padding-bottom: 4vh;
+}
+
+.child-text {
+    font-size: 18px;
+    font-weight: 300;
+    line-height: 1.5;
+    color: rgb(119, 119, 119);
+}
+
+.donate-buttons {
+    gap: 5vh;
+    display: flex;
+    padding-top: 13vh;
+    justify-content: center;
+}
+
+.donate-button {
+    gap: 8px;
+    width: 22vh;
+    height: 7vh;
+    border: none;
+    color: white;
+    cursor: pointer;
+    font-size: 15px;
+    font-weight: 500;
+    align-items: center;
+    justify-content: center;
+    background-color: #dc3545;
+}
+
+.vw-button {
+    gap: 8px;
+    width: 22vh;
+    height: 7vh;
+    border: none;
+    outline: none;
+    cursor: pointer;
+    overflow: hidden;
+    color: #dc3545;
+    font-size: 15px;
+    font-weight: 500;
+    align-items: center;
+    justify-content: center;
+    background-color: white;
+}
+
+.donation-image {
+    width: 40%;
+}
+
+.donation-image img {
+    width: 100%;
+    height: auto;
+    object-fit: cover;
+}
+
+.donate-buttons .donate-button:hover {
+    color: #dc3545;
+    transition: 0.5s;
+    background-color: white;
+}
+
+.donate-buttons .vw-button:hover {
+    background-color: #dc3545;
+    transition: 0.5s;
+    color: white;
+}
+
+.explonation-holder {
+    padding-top: 10vh;
+    width: 100%;
+    height: 95vh;
+    display: flex;
+}
+
+.explonation {
+    gap: 20vh;
+    width: 100%;
+    height: 64vh;
+    display: flex;
+    margin: 0 auto;
+    padding-top: 10vh;
+    padding-bottom: 10vh;
+    justify-content: center;
+}
+
+.explonation-text {
+    width: 30%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.about {
+    font-size: 21px;
+    color: aquamarine;
+    padding-bottom: 5vh;
+}
+
+.explonation-text h1 {
+    color: rgb(38, 59, 92);
+    font-family: "Jost", sans-serif;
+    font-weight: 500;
+    font-size: 41px;
+    font-style: normal;
+}
+
+.child {
+    padding-top: 3vh;
+    color: #777777;
+    font-size: 18px;
+    font-weight: 300;
+    line-height: 1.5;
+    padding-bottom: 6vh;
+}
+
+.expo-btn {
+    gap: 8px;
+    width: 22vh;
+    height: 7vh;
+    border: none;
+    color: white;
+    cursor: pointer;
+    font-size: 15px;
+    font-weight: 500;
+    align-items: center;
+    justify-content: center;
+    background-color: #dc3545;
+}
+
+.expo-btn:hover {
+    color: #dc3545;
+    transition: 0.5s;
+    background-color: white;
+}
+
+.expo-image {
+    width: 35%;
+}
+
+.expo-image img {
+    width: 100%;
+    height: auto;
+    object-fit: cover;
+}
+
+.numbers {
+    padding-top: 10vh;
+    width: 100%;
+    display: flex;
+}
+
+.numbers-section {
+    padding-top: 10vh;
+    width: 100%;
+    display: flex;
+    gap: 50px;
+    justify-content: space-around;
+    margin: 0 auto;
+    background-color: whitesmoke
+}
+
+.number-card {
+    background: white;
+    height: 60vh;
+    padding: 15px;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    width: 300px;
+    text-align: center;
+}
+
+.number-card img {
+    width: 100%;
+    border-radius: 8px;
+}
+
+.number-card h3 {
+    margin: 10px 0;
+}
+
+.number-card p {
+    font-size: 14px;
+    color: #555;
+}
+
+.number-footer {
+    gap: 8vh;
+    display: flex;
+    padding-top: 3vh;
+    align-items: center;
+    justify-content: center;
+}
+
+.goal {
+    gap: 1vh;
+    display: flex;
+    flex-direction: column;
+}
+
+.number-footer span {
+    color: aqua;
+}
+
+.raised {
+    gap: 1vh;
+    display: flex;
+    flex-direction: column;
+}
+
+.number-card button {
+    background-color: #dc3545;
+    color: white;
+    border: none;
+    padding: 10px;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.number-card:hover h3 {
+    color: #dc3545;
+    transition: 0.5s;
+}
+
+.number-card:hover button {
+    transition: 0.5s;
+    color: #dc3545;
+    background-color: white;
+}
+
+.navigation::after {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 255, 0);
+    transition: 0.5s ease;
+    z-index: -1;
+}
+
+.scrolled::after {
+    background: rgb(38, 59, 92);
+}

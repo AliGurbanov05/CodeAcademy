@@ -1,0 +1,349 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+header {
+  width: 100%;
+  height: 155px;
+  flex-wrap: wrap;
+  background-color: rgba(128, 128, 128, 0.171);
+}
+header .header-header {
+  width: 80%;
+  height: 55px;
+  display: flex;
+  margin: 0 auto;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: space-between;
+}
+header .header-header .icons {
+  gap: 10px;
+  display: flex;
+  color: #727272;
+  flex-wrap: wrap;
+  align-items: center;
+}
+header .header-header .info {
+  gap: 30px;
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+}
+header .header-header .info i {
+  color: #5db2ff;
+}
+header .header-footer {
+  width: 100%;
+  background-color: white;
+  flex-wrap: wrap;
+}
+header .header-footer .footer-holder {
+  width: 81%;
+  height: 90px;
+  display: flex;
+  margin: 0 auto;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: space-between;
+}
+header .header-footer .footer-holder i {
+  display: none;
+}
+header .header-footer .footer-holder nav ul {
+  gap: 25px;
+  display: flex;
+  list-style: none;
+}
+header .header-footer .footer-holder nav ul li a {
+  color: #727272;
+  font-size: 15px;
+  text-transform: capitalize;
+  font-weight: 500;
+  display: inline-block;
+  padding: 0px 0px 0px 0px;
+  font-family: "Poppins", sans-serif;
+  position: relative;
+  text-transform: capitalize;
+  text-decoration: none;
+}
+header .header-footer .footer-holder button {
+  background: #009DFF;
+  padding: 12px 26px;
+  font-size: 14px;
+  font-weight: 400;
+  border: 1px solid transparent;
+  color: #fff;
+  -webkit-border-radius: 4px;
+  -moz-border-radius: 4px;
+  border-radius: 4px;
+}
+
+#sec1 {
+  width: 100%;
+  min-height: 100vh;
+  flex-wrap: wrap;
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  background-image: url("/assets/images/banner2.png");
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+#sec1 .holder1 {
+  width: 85%;
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+}
+#sec1 .holder1 .text1 {
+  gap: 15px;
+  width: 40%;
+  display: flex;
+  flex-wrap: wrap;
+  padding-left: 30px;
+  flex-direction: column;
+  justify-content: center;
+}
+#sec1 .holder1 .text1 h1 {
+  font-weight: 700;
+  color: #1F1F1F;
+  font-family: "Poppins", sans-serif;
+  font-size: 40px;
+  text-transform: capitalize;
+  letter-spacing: 2px;
+  font-weight: 300;
+}
+#sec1 .holder1 .text1 span {
+  font-size: 16px;
+  font-weight: 300;
+  line-height: 28px;
+  color: #4D4D4D;
+  margin-bottom: 13px;
+  font-family: "Poppins", sans-serif;
+}
+#sec1 .holder1 .text1 button {
+  width: 236px;
+  height: 50px;
+  background: #009DFF;
+  padding: 12px 26px;
+  font-size: 14px;
+  font-weight: 400;
+  border: 1px solid transparent;
+  color: #fff;
+  -webkit-border-radius: 4px;
+  -moz-border-radius: 4px;
+  border-radius: 4px;
+}
+
+#sec2 {
+  width: 100%;
+  min-height: 50vh;
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: center;
+  background-color: #007bff;
+}
+#sec2 .cards {
+  gap: 20px;
+  display: flex;
+  width: 60%;
+  flex-wrap: wrap;
+}
+#sec2 .cards .card2 {
+  background-color: #17a2b8;
+}
+#sec2 .cards .card {
+  width: 31%;
+  height: 40vh;
+  gap: 10px;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  flex-direction: column;
+}
+#sec2 .cards .card h2 {
+  font-weight: 300;
+  font-size: 24px;
+  color: white;
+}
+#sec2 .cards .card span {
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 28px;
+  color: #fff;
+  margin-top: 10px;
+  margin-bottom: 26px;
+}
+#sec2 .cards .card button {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 150px;
+  height: 36px;
+  background: transparent;
+  padding: 12px 26px;
+  font-size: 14px;
+  font-weight: 400;
+  border: 1px solid white;
+  color: #fff;
+  -webkit-border-radius: 4px;
+  -moz-border-radius: 4px;
+  border-radius: 4px;
+}
+#sec2 .cards .card .fa-solid {
+  color: white;
+  font-size: 40px;
+}
+
+#sec3 {
+  flex-wrap: wrap;
+  width: 100%;
+  min-height: 130vh;
+  display: flex;
+  align-items: center;
+}
+#sec3 .holder3 {
+  gap: 20px;
+  width: 70%;
+  display: flex;
+  margin: 0 auto;
+}
+#sec3 .holder3 .left {
+  width: 50%;
+}
+#sec3 .holder3 .right {
+  width: 50%;
+  height: 50vh;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  flex-direction: column;
+}
+#sec3 .holder3 .right p {
+  font-size: 18px;
+  font-weight: 400;
+  color: #1F1F1F;
+  margin-bottom: 40px;
+  position: relative;
+  z-index: 9;
+  padding-bottom: 9px;
+}
+#sec3 .holder3 .right h2 {
+  font-weight: 500;
+  font-size: 36px;
+  margin-bottom: 10px;
+  font-family: "Poppins", sans-serif;
+  color: #1F1F1F;
+}
+#sec3 .holder3 .right span {
+  font-size: 16px;
+  font-weight: 300;
+  line-height: 28px;
+  color: #4D4D4D;
+  margin-bottom: 13px;
+  font-family: "Poppins", sans-serif;
+}
+#sec3 .holder3 .right button {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 150px;
+  height: 36px;
+  background: transparent;
+  padding: 12px 26px;
+  font-size: 14px;
+  font-weight: 400;
+  border: 1px solid #007bff;
+  color: #007bff;
+  -webkit-border-radius: 4px;
+  -moz-border-radius: 4px;
+  border-radius: 4px;
+}
+
+@media screen and (min-width: 700px) and (max-width: 1024px) {
+  header {
+    width: 100%;
+  }
+  header .header-header {
+    width: 100%;
+  }
+  header .header-footer {
+    width: 100%;
+  }
+  header .header-footer .footer-holder {
+    width: 100%;
+  }
+  #sec1 {
+    width: 100%;
+  }
+  #sec1 .holder1 {
+    width: 100%;
+  }
+  #sec1 .holder1 .text1 {
+    width: 75%;
+  }
+  #sec2 .cards {
+    width: 100%;
+  }
+  #sec2 .cards .card {
+    width: 40%;
+  }
+  #sec3 {
+    width: 100%;
+  }
+  #sec3 .holder3 {
+    width: 100%;
+  }
+  #sec3 .holder3 .left {
+    width: 50%;
+  }
+  #sec3 .holder3 .left img {
+    width: 200px;
+    height: 200px;
+  }
+  #sec3 .holder3 .right {
+    width: 50%;
+  }
+}
+@media screen and (min-width: 300px) and (max-width: 700px) {
+  header .header-footer .footer-holder i {
+    display: block;
+  }
+  header .header-footer .footer-holder nav {
+    display: none;
+  }
+  header .header-footer .footer-holder button {
+    display: none;
+  }
+  #sec2 .cards {
+    display: flex;
+    justify-content: center;
+    width: 100%;
+  }
+  #sec2 .cards .card {
+    width: 80%;
+    display: flex;
+    justify-content: center;
+  }
+  #sec3 {
+    width: 100%;
+  }
+  #sec3 .holder3 {
+    width: 100%;
+  }
+  #sec3 .holder3 .left {
+    width: 50%;
+  }
+  #sec3 .holder3 .left img {
+    width: 200px;
+    height: 200px;
+  }
+  #sec3 .holder3 .right {
+    width: 50%;
+  }
+}

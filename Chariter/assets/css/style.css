@@ -1,0 +1,104 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+header{
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+header .header-top {
+    display: flex;
+    width: 100%;
+    justify-content: center;
+    align-items: center;
+    background-color: brown;
+    padding: 10px 0;
+
+}
+
+header .header-top .container-top {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 90%;
+    padding: 7px 15px;
+   
+}
+
+header .header-top .container-top .container-text {
+    display: flex;
+    width: 25%;
+    justify-content: space-between;
+    color: white;
+    font-weight: 500;
+    
+
+}
+
+header .header-top .container-top .container-icons {
+    display: flex;
+    width: 13%;
+    justify-content: space-between;
+    align-items: center;
+    color: white;
+}
+header .header-top .container-top .container-icons :hover{
+    transition:  0.7s;
+   transform: scaleX(-1)
+}
+header .header-bottom{
+    display: flex;
+    width: 100%;
+    justify-content: center;
+    align-items: center;
+    padding: 10px 0;
+
+}
+header .header-bottom .container-bottom{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 90%;
+    
+}
+
+header .header-bottom .container-bottom nav {
+    display: flex;
+    width: 35%;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 20px;
+    
+}
+header .header-bottom .container-bottom .nav .links {
+    list-style: none;
+    gap: 20px;
+    font-weight: 600;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    
+}
+header .header-bottom .container-bottom .nav .links :hover{
+    color: brown;
+    transition: 0.7s;
+    
+}
+header .header-bottom .container-bottom button {
+   background-color: brown;
+   color: white;
+   border: none;
+   border-radius: 15px;
+   padding: 9px 15px;
+   justify-content: space-around;
+}
+header .header-bottom .container-bottom button :hover {
+    background-color: brown;
+    transition:  0.7s;
+}

@@ -1,0 +1,87 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.container {
+    background-image: url("https://storage.needpix.com/rsynced_images/brown-sand-background-1441097463MLx.jpg");
+    display: flex;
+    margin: 0 auto;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+    gap: 25px;
+}
+
+.posts{
+    background-color: white;
+    border-radius: 50px;
+    width: 200px;
+    flex-direction: column;
+    text-align: center;
+    align-items: center;
+}
+.post-one h5{
+    margin-top: 10%;
+    color: blueviolet;
+    
+}
+.post-two h5{
+    margin-top: 10%;
+    color: orangered
+    
+}
+.post-tree h5{
+    margin-top: 10%;
+    color: green
+    
+}
+.posts h3{
+    margin-top: 10%;
+    color: gray;
+    margin-bottom: 15%;
+    
+}
+.container img{
+    height: 150px;
+    width: 200px;
+    border-radius: 10% 10% 0 0;
+}
+.footer{
+    padding: 3px;
+    border-radius: 0 0 10% 10%;
+}
+.footer h2{
+    font-size: 20px;
+    font-weight: 300;
+ }
+ .footer h4{
+     font-size: 15px;
+     font-weight: 300;
+  }
+.one-footer{
+    text-align: center;
+    align-items: center;
+    display: flex;
+    justify-content: space-around;
+    background-color: blueviolet;
+    color: white;
+}
+.two-footer{
+    display: flex;
+    text-align: center;
+    align-items: center;
+    justify-content: space-around;
+    background-color: orangered;
+    color: white;
+}
+.tree-footer{
+    display: flex;
+    text-align: center;
+    align-items: center;
+    justify-content: space-around;
+    background-color: green;
+    color: white;
+}
+
