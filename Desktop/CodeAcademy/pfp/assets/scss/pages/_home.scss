@@ -1,0 +1,50 @@
+$border-color: #ccc;
+$hover-bg: #f0f0f0;
+$input-padding: 5px;
+$section-width: 300px;
+
+.profile-section {
+    border: 2px dashed $border-color;
+    padding: 20px;
+    width: $section-width;
+    margin: 0 auto;
+    text-align: center;
+    border-radius: 10px;
+
+    &.completed-profile {
+        img {
+            max-width: 100px;
+            border-radius: 50%;
+        }
+    }
+
+    input {
+        display: block;
+        width: 90%;
+        margin: 10px auto;
+        padding: $input-padding;
+    }
+
+    button {
+        padding: 8px 16px;
+        cursor: pointer;
+    }
+
+    .drop-area {
+        border-radius: 20px;
+        border: 2px dashed darken($border-color, 10%);
+        padding: 20px;
+        margin-bottom: 15px;
+        cursor: pointer;
+        transition: background-color 0.3s ease;
+
+        &.hover {
+            background-color: $hover-bg;
+        }
+
+        img {
+            max-width: 100%;
+            border-radius: 50%;
+        }
+    }
+}

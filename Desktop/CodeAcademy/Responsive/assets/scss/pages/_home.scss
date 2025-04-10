@@ -1,0 +1,287 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Roboto", sans-serif;
+}
+
+header {
+    background-color: white;
+
+    .header-top {
+        width: 100%;
+        color: white;
+        display: flex;
+        align-items: center;
+        justify-content: space-around;
+        background-color: rgb(13, 45, 62);
+
+
+        .top-text {
+            gap: 35px;
+            width: 55%;
+            height: 50px;
+            display: flex;
+            font-size: 13px;
+            font-weight: 200;
+            align-items: center;
+
+            i {
+                color: rgb(233, 77, 101);
+            }
+        }
+
+        .top-icons {
+            gap: 20%;
+            width: 150px;
+            display: flex;
+            font-size: 18px;
+        }
+    }
+
+    .header-bottom {
+        max-width: 100%;
+        height: 100px;
+        display: flex;
+        align-items: center;
+        justify-content: space-around;
+
+        .navigation ul {
+            gap: 31px;
+            display: flex;
+            list-style: none;
+            justify-content: flex-end;
+
+            a {
+                color: gray;
+                font-weight: 500;
+                text-decoration: none;
+            }
+        }
+
+        .hamburger-menu {
+            display: none;
+            font-size: 30px;
+            cursor: pointer;
+            background: none;
+            border: none;
+            position: absolute;
+            top: 20px;
+            right: 20px;
+        }
+    }
+}
+
+body {
+    background-color: rgb(241, 241, 241);
+
+    .success {
+        max-width: 100%;
+        height: 100vh;
+        display: flex;
+        overflow: hidden;
+        align-items: center;
+        background-size: cover;
+        background-position: center;
+        justify-content: space-around;
+        background-image: url("/assets/images/h1_hero.jpg");
+
+        .btn {
+            padding: 10px 15px;
+            border: 1px solid rgb(13, 45, 62);
+            ;
+            background-color: transparent;
+        }
+
+        .success-in {
+            max-width: 85%;
+            height: 80vh;
+            display: flex;
+            flex-direction: column;
+            opacity: 0;
+            transform: translateX(-100%);
+            animation: slideIn 1s ease-out forwards;
+
+            .success-text {
+                max-width: 55%;
+
+                h3 {
+                    font-weight: 400;
+                    font-size: 26px;
+                    color: rgb(255, 33, 67);
+                    animation-delay: 0.5s;
+                }
+
+                h1 {
+                    padding-top: 30px;
+                    padding-bottom: 30px;
+                    font-size: 96px;
+                    font-weight: 700;
+                    animation-delay: 0.7s;
+                }
+
+                span {
+                    font-size: 15px;
+                    font-weight: 400;
+                    animation-delay: 0.9s;
+                }
+            }
+
+            .success-button {
+                padding-top: 30px;
+                animation-delay: 1.1s;
+
+                button {
+                    width: 195px;
+                    height: 60px;
+                    border: none;
+                    color: white;
+                    font-size: 25px;
+                    font-weight: 300;
+                    background-color: rgb(255, 33, 67);
+                    animation-delay: 1.1s;
+                }
+            }
+        }
+    }
+
+    .services {
+        display: flex;
+        flex-direction: column;
+        max-width: 88%;
+        overflow: hidden;
+        height: 600px;
+        margin: 0 auto;
+
+        .service-text {
+            h3 {
+                padding-top: 5vh;
+                font-size: 5vh;
+                width: 100%;
+                color: brown;
+            }
+
+            h1 {
+                font-size: 6vh;
+                padding-top: 4vh;
+                padding-bottom: 30px;
+            }
+        }
+
+        .service-cards {
+            gap: 5vh;
+            max-width: 100%;
+            overflow: hidden;
+            word-wrap: break-word;
+            display: flex;
+            padding-top: 30px;
+            justify-content: center;
+            align-items: center;
+
+
+            .service-card {
+                height: 300px;
+                margin: 0 auto;
+                word-wrap: break-word;
+                background-color: white;
+                box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+                max-width: 30%;
+
+                .card-icon {
+                    padding-top: 30px;
+                    padding-bottom: 30px;
+                    color: brown;
+                    font-size: 8vh;
+                    display: flex;
+                    justify-content: center;
+                }
+
+                .card-text {
+                    display: flex;
+                    flex-direction: column;
+                    text-align: center;
+
+                    h2 {
+                        padding-bottom: 3vh;
+                    }
+
+                    span {
+                        color: gray;
+                        font-weight: 600;
+                    }
+                }
+
+            }
+        }
+    }
+}
+
+@keyframes slideIn {
+    from {
+        opacity: 0;
+        transform: translateX(-100%);
+    }
+
+    to {
+        opacity: 1;
+        transform: translateX(0);
+    }
+}
+
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+        transform: translateY(-30px);
+    }
+
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+@media screen and (min-width: 300px) and (max-width: 700px) {
+    .success-text h1 {
+        font-size: 50px;
+    }
+
+    .service-card {
+        max-width: 50%;
+    }
+
+    .navigation {
+        display: none;
+    }
+
+    .hamburger-menu {
+        display: flex;
+    }
+}
+
+@media screen and (min-width: 700px) and (max-width: 1024px) {
+    header {
+
+        .navigation {
+            display: block;
+        }
+
+        .hamburger-menu {
+            display: none;
+        }
+    }
+
+    .success {
+        height: fit-content;
+
+        .success-in {
+
+            .success-text h1 {
+                font-size: 50px;
+            }
+        }
+    }
+
+    .service-card {
+        max-width: 100%;
+    }
+}

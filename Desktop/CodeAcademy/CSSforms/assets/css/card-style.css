@@ -65,5 +65,4 @@ body {
 .contact-btn:hover,
 .back-btn:hover {
     background-color: purple;
-    transition: 0.9s;
 }

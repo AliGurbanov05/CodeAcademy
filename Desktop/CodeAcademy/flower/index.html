@@ -1,0 +1,143 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css"
+        integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100..900;1,100..900&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="./assets/css/main.css">
+</head>
+
+<body>
+    <header>
+        <div class="header-container">
+            <div class="header-logo">
+                <a href=""><img src="./assets/images/logo.png" alt=""></a>
+            </div>
+            <nav>
+                <ul>
+                    <li><a href="">Home</a></li>
+                    <li><a href="">About</a></li>
+                    <li><a href="">Services</a></li>
+                    <li><a href="">Shop</a></li>
+                    <li><a href="">Pages</a></li>
+                    <li><a href="">Blog</a></li>
+                    <li><a href="">Contact</a></li>
+                </ul>
+            </nav>
+            <div class="info">
+                <div class="search">
+                    <input type="text" id="search-bar" class="hidden" placeholder="Axtar...">
+                    <button id="search-icon"><i class="fa-solid fa-magnifying-glass"></i></button>
+                </div>
+                <div class="favorites">
+                    <i class="fa-regular fa-heart"></i>
+                    <span>(05)</span>
+                </div>
+                <div class="basket">
+                    <i class="fa-brands fa-shopify"></i>
+                    <span>(01)</span>
+                </div>
+            </div>
+        </div>
+    </header>
+    <main>
+        <section class="firstSection">
+            <div class="first-container">
+                <div class="first-text">
+                    <p>Fresh Flower & Gift Shop</p>
+                    <h1>Making beautiful flowers a part of your life</h1>
+                </div>
+                <div class="first-button">
+                    <button>Sop Now</button>
+                </div>
+            </div>
+        </section>
+        <section class="secondSection">
+            <div class="second-container">
+                <div class="second-cards">
+                    <div class="second-card">
+                        <div class="card-logo">
+                            <img src="./assets/images/benefit-1.png" alt="">
+                        </div>
+                        <div class="card-text">
+                            <h2>100% Freshness</h2>
+                            <span>Most people are unaware of the less common flower</span>
+                        </div>
+                    </div>
+                    <div class="second-card">
+                        <div class="card-logo">
+                            <img src="./assets/images/benefit-2.png" alt="">
+                        </div>
+                        <div class="card-text">
+                            <h2>Made by artist</h2>
+                            <span>Most people are unaware of the less common flower</span>
+                        </div>
+                    </div>
+                    <div class="second-card">
+                        <div class="card-logo">
+                            <img src="./assets/images/benefit-3.png" alt="">
+                        </div>
+                        <div class="card-text">
+                            <h2>Own courier</h2>
+                            <span>Most people are unaware of the less common flower</span>
+                        </div>
+                    </div>
+                    <div class="second-card">
+                        <div class="card-logo">
+                            <img src="./assets/images/benefit-4.png" alt="">
+                        </div>
+                        <div class="card-text">
+                            <h2>100% Freshness</h2>
+                            <span>Most people are unaware of the less common flower</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section class="thirdSection">
+            <div class="third-container">
+                <div class="third-cards">
+                    <div class="third-card">
+                        <h4>Fresh Flower</h4>
+                        <span>( 25 items )</span>
+                    </div>
+                    <div class="third-card">
+                        <div class="card-text"></div>
+                        <h4>Succulent plants</h4>
+                        <span>( 162 items )</span>
+                    </div>
+                    <div class="third-card">
+                        <h4>Cactus plants</h4>
+                        <span>( 58 items )</span>
+                    </div>
+                    <div class="third-card">
+                        <h4>Funiture tree</h4>
+                        <span>( 25 items )</span>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+
+    <script>
+        document.getElementById("search-icon").addEventListener("click", function () {
+            var searchBar = document.getElementById("search-bar");
+            searchBar.classList.toogle("active");
+            if (searchBar.classList.contains("active")) {
+                searchBar.focus();
+            }
+        })
+    </script>
+</body>
+
+</html>

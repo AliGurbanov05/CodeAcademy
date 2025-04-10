@@ -1,0 +1,37 @@
+.profile-section {
+  border: 2px dashed #ccc;
+  padding: 20px;
+  width: 300px;
+  margin: 0 auto;
+  text-align: center;
+  border-radius: 10px;
+}
+.profile-section.completed-profile img {
+  max-width: 100px;
+  border-radius: 50%;
+}
+.profile-section input {
+  display: block;
+  width: 90%;
+  margin: 10px auto;
+  padding: 5px;
+}
+.profile-section button {
+  padding: 8px 16px;
+  cursor: pointer;
+}
+.profile-section .drop-area {
+  border-radius: 20px;
+  border: 2px dashed #b3b3b3;
+  padding: 20px;
+  margin-bottom: 15px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+.profile-section .drop-area.hover {
+  background-color: #f0f0f0;
+}
+.profile-section .drop-area img {
+  max-width: 100%;
+  border-radius: 50%;
+}
