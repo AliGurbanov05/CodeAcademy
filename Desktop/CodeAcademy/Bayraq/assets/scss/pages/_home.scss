@@ -1,0 +1,57 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    width: 90%;
+    height: 100vh;
+    display: flex;
+    margin: 0 auto;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.olkeler {
+    gap: 30px;
+    width: 700px;
+    height: 90vh;
+    padding: 20px 10px;
+    display: flex;
+    border: 2px solid black;
+    border-collapse: collapse;
+    justify-content: space-between;
+    flex-direction: column;
+
+    .img {
+        width: 200px;
+        height: 25vh;
+    }
+
+    .cn {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        height: 30vh;
+        border: 2px solid black;
+        border-collapse: collapse;
+
+        img {
+            width: 200px;
+            height: 25vh;
+        }
+    }
+}
+
+.bayraqlar {
+    height: 90vh;
+    display: flex;
+    justify-content: space-between;
+    flex-direction: column;
+
+    img {
+        width: 200px;
+        height: 25vh;
+    }
+}
